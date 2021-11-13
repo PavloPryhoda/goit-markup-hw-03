@@ -28,13 +28,11 @@ body {
 
 .header-list {
   display: flex;
-  align-items: center;
 }
 
-.header-item {
-  margin-left: 50px;
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
-
 .header-item:first-child {
   margin-left: 93px;
 }
@@ -44,17 +42,18 @@ body {
   align-items: center;
 }
 
+.header-mail {
+  margin-right: 50px;
+}
+
 .header-container {
   display: flex;
+  align-items: center;
   height: 80px;
 }
 
 .header-connect {
   margin-left: auto;
-}
-
-.header-mail {
-  margin-right: 50px;
 }
 
 .header {
@@ -164,11 +163,26 @@ body {
 
 .hero-container {
   height: 600px;
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
+
+.hero-btn {
+  margin-top: 30px;
+  margin-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
 }
 
 .hero-text {
   width: 696px;
   height: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* -----------------------------ОСОБЕННОСТИ--------------------------------------- */
@@ -202,6 +216,24 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+.text-container {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 1170px;
+  height: 101px;
+}
+
+.list-text {
+  margin-bottom: 10px;
+}
+
+.list-pre-text {
+  margin-right: 10px;
+  width: 270px;
+  height: 101px;
+}
 /* -------------------------------ЧЕМ-МИ-ЗАНИМАЕМСЯ----------------------------------- */
 
 .item-text {
@@ -211,6 +243,19 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-text-color);
+}
+
+.item-container {
+  margin-top: 94px;
+}
+
+.img-container {
+  margin-top: 50px;
+  display: flex;
+}
+
+.img:nth-child(n + 1) {
+  margin-right: 30px;
 }
 
 /* ---------------------------------НАША-КОМАННДА---------------------------------- */
@@ -226,6 +271,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-text-color);
+  margin-top: 30px;
 }
 
 .items-title {
@@ -235,11 +281,39 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
+
+.items-container {
+  padding-top: 188px;
+  padding-bottom: 94px;
+}
+
+.container-list {
+  margin-top: 50px;
+  display: flex;
+}
+
+.items-img {
+  margin-left: auto;
+}
+
+.container-per {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-left: 30px;
+}
+
+.container-per:first-child {
+  margin-left: 0px;
+}
+
 /* --------------------СТОРІНКА-2-ПОРТФОЛИО----------------------------------------- */
 
 .list-btn {
-  font-family: inherit;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -248,6 +322,15 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
+  border-radius: 4px;
+}
+
+.list-btn:focus {
+  color: #188ce8;
+}
+
+.list-btn:hover {
+  color: #188ce8;
 }
 
 .section-text {
@@ -266,9 +349,58 @@ body {
   color: #757575;
 }
 
+.button-container {
+  margin-top: 94px;
+  display: flex;
+}
+
+.btn-container {
+  display: flex;
+  margin-bottom: 34px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pre-btn {
+  margin: 8px;
+  margin-bottom: 50px;
+}
+
+.container-pre-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-box {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.img-box:nth-child(3n + 1) {
+  margin-left: 0px;
+}
+
+.img-box:nth-child(n + 7) {
+  margin-bottom: 114px;
+}
+
 /* ----------------------------ФУТЕР--------------------------------------------- */
 .footer {
   background-color: #2f303a;
+}
+
+.footer-container {
+  height: 252px;
+  padding-top: 60px;
+}
+
+.list-footer {
+  margin-top: 20px;
+}
+
+.footer-list {
+  display: block;
+  margin-top: 9px;
 }
 
 .footer-logo-web {
@@ -326,22 +458,4 @@ address {
 
 .footer-map:focus {
   color: var(--accent-color);
-}
-
-.footer-container {
-  height: 252px;
-}
-
-.footer-logo-web {
-  display: inline-block;
-  padding-top: 60px;
-}
-
-.list-footer {
-  margin-top: 20px;
-}
-
-.footer-list {
-  display: inline-block;
-  margin-top: 9px;
 }
