@@ -28,6 +28,7 @@ body {
 .nav-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
@@ -173,11 +174,8 @@ body {
   border: none;
 }
 
+.hero-btn:hover,
 .hero-btn:focus {
-  color: #188ce8;
-}
-
-.hero-btn:hover {
   color: #188ce8;
 }
 
@@ -189,6 +187,10 @@ body {
 
 .container-pre-text:not(:last-child) {
   margin-right: 30px;
+}
+
+.container-pre-text {
+  text-transform: uppercase;
 }
 
 .section {
@@ -235,7 +237,7 @@ body {
 /* -------------------------------ЧЕМ-МИ-ЗАНИМАЕМСЯ----------------------------------- */
 
 .img-container {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .container-img {
@@ -275,10 +277,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.img-items {
-  margin-bottom: 30px;
-}
-
 .box-item-text {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -286,6 +284,8 @@ body {
 
 .items {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .items-text {
@@ -364,6 +364,9 @@ body {
 
 .flex-text-container {
   padding: 20px 24px;
+  border-right: 24px;
+  border-bottom: 20px;
+  border-left: 24px;
 }
 
 .box-img {
@@ -413,7 +416,7 @@ body {
 }
 
 .footer-logo-web {
-  display: flex;
+  display: block;
   margin-bottom: 20px;
   font-family: Raleway;
   font-weight: bold;
